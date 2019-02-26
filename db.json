@@ -1,4 +1,51 @@
 {
+  "resources": [
+    { 
+      "id": 1, 
+      "title": "JavaScript Services Event Stream", 
+      "repo": "https://github.com/jdamore/jspubsub", 
+      "cmd": "git clone", 
+      "request": "git clone https://github.com/jdamore/jspubsub jseventstore",
+      "images": [],
+      "help": []
+    },
+    {
+      "id": 2,
+      "title": "",
+      "repo": "https://github.com/thiagomarini/binocular.git",
+      "cmd": "git clone",
+      "request": "git clone https://github.com/thiagomarini/binocular.git",
+      "images": [],
+      "help": []
+    }
+  ],
+  "deployable": [
+    {
+      "id": 1, 
+      "title": "Linux CoreOS Instance Image",
+      "details": {
+        "virtualization": "hvm",
+        "version": "1967.6.0", 
+        "flavor": "CoreOS/RedHat",
+        "boot": ["BIOS"],
+        "iso-image": "https://stable.release.core-os.net/amd64-usr/current/coreos_production_iso_image.iso"
+      },
+      "clouds": [
+        {
+          "cloud": "amazon",
+          "installable": ["t2.micro"],
+          "regions": ["US-EAST-1", "US-EAST-2"],
+          "image-id": "ami-0089347d530e1f3e6"
+        }
+      ],
+      "cloud-image-id":"ami-0089347d530e1f3e6", 
+      "url": "https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-0089347d530e1f3e6",
+      "help": [
+        "https://coreos.com/why/",
+        "https://coreos.com/docs/"
+      ]
+    }
+  ],
   "posts": [
     { "id": 1, "title": "Post 1" },
     { "id": 2, "title": "Post 2" },
