@@ -1,3 +1,15 @@
+/**
+    Resource Object Record
+    {
+      "id": Integer,
+      "title": String,
+      "repo": String,
+      "cmd": String,
+      "request": String,
+      "images": Array [ String ],
+      "help": Array[ String ]
+    }
+*/
 {
   "resources": [
     { 
@@ -17,6 +29,24 @@
       "request": "git clone https://github.com/thiagomarini/binocular.git",
       "images": [],
       "help": []
+    },
+    {
+      "id": 3,
+      "title": "CentOS Installer",
+      "repo": "https://github.com/coreos/coreos-installer",
+      "cmd": "git clone",
+      "request": "git clone https://github.com/coreos/coreos-installer",
+      "images": [],
+      "help": []
+    },
+    {
+      "id": 4,
+      "title": "Mist Cloud Management Platform",
+      "repo": "https://github.com/mistio/mist-ce/tree/v4.0.0",
+      "cmd": "docker-compose up -d",
+      "request": "curl -L wget https://github.com/mistio/mist-ce/releases/download/v4.0.0/docker-compose.yml -o mist_v4.0.0_docker-compose.yml",
+      "images": ["https://github.com/mistio/mist-ce/archive/v4.0.0.zip"],
+      "help": ["https://github.com/mistio/mist-ce/releases", "https://mist.io/", "https://github.com/mistio/mist-ce"]
     }
   ],
   "deployable": [
@@ -46,16 +76,9 @@
       ]
     }
   ],
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
+  "posts": [],
+  "comments": [],
   "profile": {
-    "name": "typicode"
+    "name": "none"
   }
 }
