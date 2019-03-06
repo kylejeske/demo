@@ -1,15 +1,3 @@
-/**
-    Resource Object Record
-    {
-      "id": Integer,
-      "title": String,
-      "repo": String,
-      "cmd": String,
-      "request": String,
-      "images": Array [ String ],
-      "help": Array[ String ]
-    }
-*/
 {
   "resources": [
     { 
